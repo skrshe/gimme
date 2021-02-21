@@ -1,14 +1,11 @@
 # gimme - simple terminal
 # See LICENSE file for copyright and license details.
-.POSIX:
-
-# include config.mk
 
 SRC = src/main.c
 # OBJ = $(SRC:.c=.o)
 CC = gcc
-FLAGS = -ggdb -wall -wextra
-LINKS = -lstd
+FLAGS = -ggdb -Wall -Wextra
+LINKS =
 ALLFLAGS = $(FLAGS) $(LINKS)
 PREFIX = /usr/local/
 
@@ -20,24 +17,22 @@ options:
 	@echo "LDFLAGS = $(LINKS)"
 	@echo "CC      = $(CC)"
 
-gimme: $(SRC)
+gimme: dist
 	$(CC) $(SRC) $(ALLFLAGS) -o build/gm
 
-markdocs:
+# markdocs:
 	# make man page from wiki markdown
 
 clean:
 	rm -rf build/*
 
-dist: clean
-    [ ! -d "build" ] && mkdir -p build
-	cd build
+dist: clean ; [ ! -d "build" ] && mkdir -p build
 	# tar -cf - gimme-$(VERSION) | gzip > gimme-$(VERSION).tar.gz
 	# rm -rf gimme-$(VERSION)
 
-install: all  gimme # markdocs
+install: all  gimme ; # markdocs
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	cp -f gm $(DESTDIR)$(PREFIX)/bin
+	cp -f build/gm $(DESTDIR)$(PREFIX)/bin
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/gm
 	# mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	# sed "s/VERSION/$(VERSION)/g" < gimme.1 > $(DESTDIR)$(MANPREFIX)/man1/gimme.1

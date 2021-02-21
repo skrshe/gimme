@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include <stdout.h>
+#include <stdio.h>
 
 int main(void) {
-    printf("hello, git\n")
+    printf("hello, git\n");
 }
