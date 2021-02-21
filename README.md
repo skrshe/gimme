@@ -11,7 +11,7 @@ so far it is entirely hyperthetical
 ## Why not `RRIR`?!
 - Im not to personally concerned with performance and security,
 as I'm a minimiser (lazy arse procrastinator).
-- I'd rather have free reign over code styling and shapping.
+- I don't know rust
 
 - For people who do `RRIR` props to you.
 
