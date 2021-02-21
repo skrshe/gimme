@@ -1,4 +1,4 @@
-# Gimme
+# Gimme (GIt MetagaME)
 gm - A wrapper around the whole git meta game
 
 `gm domain/user/repo`
@@ -10,8 +10,7 @@ This project is yet to have a working software release
 ## Why not RRIR?!
 - Im not to personally concerned with performance and security
     (I'm a minimiser (lazy arse procrastinator))
-- I'd rather be able to easily tell what my progam is doing from the
-    source code and have free reign over code styling and shapping.
+- I'd rather have free reign over code styling and shapping.
 
 - For people who do RRIR props to you.
 
@@ -19,12 +18,6 @@ This project is yet to have a working software release
 - read to the user like there a child
 - constantly supply repeating output
 
-# Commands
-spawn
-    done by default when specifying a remote which has credentials and doesnt have repo
-modify
-    change a repo settings
-config
     git config aswell as domain specific config
 graph
     tree
