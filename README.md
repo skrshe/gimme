@@ -27,6 +27,7 @@ unknown
 - gcc
 - sudo
 - git
+
 # Installation
 intall with:
 ```console
@@ -37,16 +38,8 @@ sudo make install
 ```
 remove with:
 ```console
-sudo make remove
+sudo make uninstall
 ```
-
-# !!! Disclaimer !!!
-## Why not `RRIR`?!
-- Im not to personally concerned with performance and security,
-as I'm a minimiser (lazy arse procrastinator).
-- I don't know rust
-
-- For people who do `RRIR` props to you.
 
 # Inspired by
 gh -  https://github.com/cli/cli
