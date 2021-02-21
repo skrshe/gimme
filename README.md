@@ -10,7 +10,7 @@ gimme-0.0.1 can now be built and installed
 - read to the user like their a child
 - constantly supply repeating output
 
-# Funcionality
+# Functionality
 chugga chugga chu chu
 ```
       o o o o ~~  ~~ ~                                      _____
