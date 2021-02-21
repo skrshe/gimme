@@ -1,0 +1,65 @@
+$ gm repo myrepo
+"domain.com/user/repo"
+parentdir -- myrepo
+$ edit file
+$ gm tree
+.
+|- file
+|- license
+|- Makefile
+|- README.md
+'- src
+   |- lib.h
+   '- main.c
+$ gm push
+  master -> master
+$ gm branch
+branch name:
+> post
+  master -- post
+$ edit file
+$ gm push
+add "changes" to domain.com?
+Y/n> yes
+  post -> post
+$ gm gitlog --hash --contributer --dated
+nnnnnnn • repo spawn    user 7min
+nnnnnnn • file add      user 5min
+        |\
+nnnnnnn | • post        user 3min
+nnnnnnn | • file modded user 2min
+$ gm merge
+merge post -> master?
+Y/n> yes
+  post -> master
+$ gm oldrepo
+myrepo -- oldrepo
+    main != main
+pull down main?
+Y/n>
+$ gm gitlog
+|   • file add
+|\ /
+| • post
+| • file modded
+|/
+• phew
+• hi other user p.s dont use commit messages like this
+$ gm branch
+$ gm config aether.space
+username:
+> user
+password:
+> ••••••••
+aether.space configured
+$ gm repo3
+oldrepo -- repo3
+$ gm status
+aether.space/user/repo3
+created 3min ago
+.
+|- license
+|- README.md
+'- src
+   |- lib.h
+   '- main.c
