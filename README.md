@@ -31,6 +31,7 @@ to build gimme:
 - sudo
 - git
 
+### yet to be able to generate manpages
 to generate docs from the wiki:
 - pandoc
 
