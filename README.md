@@ -25,10 +25,14 @@ unknown
 ```
 
 # Build Dependancies:
+to build gimme:
 - make
 - gcc
 - sudo
 - git
+
+to generate docs from the wiki:
+- pandoc
 
 # Installation
 intall with:
