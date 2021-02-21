@@ -7,9 +7,8 @@ gm - A wrapper around the whole git meta game
 gimme-0.0.1 can now be built and installed
 
 # Non goals
-- read to the user like there a child
+- read to the user like their a child
 - constantly supply repeating output
-
 
 # Funcionality
 chugga chugga chu chu
@@ -20,9 +19,10 @@ chugga chugga chu chu
 >(_______|__|_|_GBRR_]_|              |_|              |_|          |_|
 _/oo-OOOO-oo' !oo!!oo!=`!o!o!----!o!o!'=`!o!o!----!o!o!'=`!o!o--o!o!'
 +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+unknown
 ```
 
-# Dependancies
+# Build Dependancies:
 - make
 - gcc
 - sudo
