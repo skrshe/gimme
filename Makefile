@@ -2,14 +2,15 @@
 # See LICENSE file for copyright and license details.
 .POSIX:
 
-include config.mk
+# include config.mk
 
 SRC = src/main.c
-OBJ = $(SRC:.c=.o)
+# OBJ = $(SRC:.c=.o)
 CC = gcc
 FLAGS = -ggdb -wall -wextra
 LINKS = -lstd
 ALLFLAGS = $(FLAGS) $(LINKS)
+PREFIX = /usr/local/
 
 all: options gimme
 
@@ -20,22 +21,19 @@ options:
 	@echo "CC      = $(CC)"
 
 gimme: $(SRC)
-	[ ! -f "build" ] && mkdir build
-	$(CC) $(SRC) -o build/gm
+	$(CC) $(SRC) $(ALLFLAGS) -o build/gm
 
 markdocs:
-	make man page from wiki markdown
+	# make man page from wiki markdown
 
 clean:
-	rm -f build/{gimme,$(OBJ)} gimme-$(VERSION).tar.gz
+	rm -rf build/*
 
 dist: clean
-	mkdir -p gimme-$(VERSION)
-	cp -R FAQ LEGACY TODO LICENSE Makefile README config.mk\
-		config.def.h gimme.info gimme.1 arg.h gimme.h $(SRC)\
-	 gimme-$(VERSION)
-	tar -cf - gimme-$(VERSION) | gzip > gimme-$(VERSION).tar.gz
-	rm -rf gimme-$(VERSION)
+    [ ! -d "build" ] && mkdir -p build
+	cd build
+	# tar -cf - gimme-$(VERSION) | gzip > gimme-$(VERSION).tar.gz
+	# rm -rf gimme-$(VERSION)
 
 install: all  gimme # markdocs
 	mkdir -p $(DESTDIR)$(PREFIX)/bin

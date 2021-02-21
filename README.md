@@ -5,14 +5,15 @@ gm - A wrapper around the whole git meta game
 
 # !!! Disclaimer !!!
 ## Not yet under production
-This project is yet to have a working software release
+This project is yet to have a software release\
+so far it is entirely hyperthetical
 
-## Why not RRIR?!
-- Im not to personally concerned with performance and security
-    (I'm a minimiser (lazy arse procrastinator))
+## Why not `RRIR`?!
+- Im not to personally concerned with performance and security,
+as I'm a minimiser (lazy arse procrastinator).
 - I'd rather have free reign over code styling and shapping.
 
-- For people who do RRIR props to you.
+- For people who do `RRIR` props to you.
 
 # Non goals
 - read to the user like there a child
