@@ -20,8 +20,10 @@ options:
 gimme: dist
 	$(CC) $(SRC) $(ALLFLAGS) -o build/gm
 
-# markdocs:
+# markdocs: gimme
 	# make man page from wiki markdown
+	# mkdir -p build/doc/
+	# pandoc wiki/* -o -f roff build/doc/gimme.1
 
 clean:
 	rm -rf build/*
