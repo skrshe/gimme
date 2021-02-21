@@ -3,8 +3,10 @@ gm - A wrapper around the whole git meta game
 
 `gm domain/user/repo`
 
+go to (github.com/skrshe/gimme/wiki)[options] for more info on internals
+
 # Announcement
-gimme-0.0.1 can now be built and installed
+gimme-0.0.1-linux can now be built and installed
 
 # Non goals
 - read to the user like their a child
