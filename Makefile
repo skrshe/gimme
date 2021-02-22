@@ -13,24 +13,27 @@ all: options gimme
 
 options:
 	@echo gimme build options:
-	@echo "CFLAGS  = $(FLAGS)"
+	@echo "FLAGS  = $(FLAGS)"
 	@echo "LDFLAGS = $(LINKS)"
 	@echo "CC      = $(CC)"
 
 gimme: dist
 	$(CC) $(SRC) $(ALLFLAGS) -o build/gm
 
-# markdocs: gimme
+markdocs:
 	# make man page from wiki markdown
 	# mkdir -p build/doc/
 	# pandoc wiki/* -o -f roff build/doc/gimme.1
+
 
 clean:
 	rm -rf build/*
 
 dist: clean ; [ ! -d "build" ] && mkdir -p build
 	# tar -cf - gimme-$(VERSION) | gzip > gimme-$(VERSION).tar.gz
-	# rm -rf gimme-$(VERSION)
+	# # rm -rf gimme-$(VERSION)
+
+run: ;[ -f "build/gm" ] && ./build/gm || echo "no binnary"
 
 install: all  gimme ; # markdocs
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
