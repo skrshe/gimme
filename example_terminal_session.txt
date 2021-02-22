@@ -2,6 +2,7 @@ $ gm repo myrepo
 "domain.com/user/repo"
 parentdir -- myrepo
 $ edit file
+$ gm alias "graph tree" tree
 $ gm tree
 .
 |- file
@@ -19,10 +20,11 @@ branch name:
   master -- post
 $ edit file
 $ gm push
-add "changes" to domain.com?
+add 'post' to 'domain/user/repo'?
 Y/n> yes
   post -> post
-$ gm gitlog --hash --contributer --dated
+$ gm alias "graph graph log --hash --contributer --dated" gitlog
+$ gm gitlog
 nnnnnnn • repo spawn    user 7min
 nnnnnnn • file add      user 5min
         |\
@@ -37,15 +39,14 @@ myrepo -- oldrepo
     main != main
 pull down main?
 Y/n>
-$ gm gitlog
-|   • file add
+$ gm log
+|   • text modded
 |\ /
-| • post
-| • file modded
+| • almost_there branched
+| • text modded
 |/
-• phew
-• hi other user p.s dont use commit messages like this
-$ gm branch
+• almost_there merged into main
+• text modded
 $ gm config aether.space
 username:
 > user
