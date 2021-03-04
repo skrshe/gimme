@@ -1,5 +1,5 @@
 $ gm repo myrepo
-"domain.com/user/repo"
+"domain.com/user/repo" created
 parentdir -- myrepo
 $ edit file
 $ gm alias "graph tree" tree
@@ -57,7 +57,7 @@ $ gm repo3
 oldrepo -- repo3
 $ gm status
 aether.space/user/repo3
-created 3min ago
+:created 3min ago
 .
 |- license
 |- README.md
