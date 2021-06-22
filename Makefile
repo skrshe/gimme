@@ -1,11 +1,17 @@
-gimme: start
-	gcc src/main.c -Wall -Wextra -ggdb -o build/gm
+CC=gcc
+FLAGS=-Wall -Wextra -ggdb
+
+build/gm: build src/main.c
+	$(CC) src/main.c $(FLAGS) -o $@
 
 start:
 	mkdir -p build
 
-clean:
-	rm -rf build/*
+clean: build/*
+	rm -rf $?
 
-run: gimme
-	build/gm
+run: build/gm
+	$?
+
+use: build/gm
+	$? -h
