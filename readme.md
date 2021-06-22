@@ -24,10 +24,7 @@ $ cd ..
 into `gm repo.wiki`
 
 # Disclaimer
-at this moment running `gm` only prints `hello git` to terminal output.
-
-# Announcement
-gimme-0.0.1-linux can now be built and installed
+at this moment running `gm` only prints what it will be used for to terminal output.
 
 # Functionality
 - work like a unix application: only print when when something important is happening
@@ -75,3 +72,6 @@ hub - https://github.com/github/hub
 gitlab - https://github.com/makkes/gitlab-cli
 
 plug.vim
+
+# License
+unlicense skrshe 2021. for more info see <https://unlicense.org>
