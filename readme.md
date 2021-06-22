@@ -28,7 +28,7 @@ at this moment running `gm` only prints what it will be used for to terminal out
 
 # Functionality
 - work like a unix application: only print when when something important is happening
-- work with github like REST apis
+- work with github-like REST apis
 
 go to [wiki/options](options.md) for info
 
@@ -37,34 +37,16 @@ go to [wiki/options](options.md) for info
 - constantly supply repeating output
 
 # Dependencies
-to clone with gimme:
-- git
 
 # Build Dependencies
 to build gimme:
 - make
 - gcc
-- sudo
-- git
-
 
 to generate docs from the wiki:
 - pandoc
 
 ___docs are yet to be set up___
-
-# Installation
-intall with:
-```console
-git clone https://github.com/skrshe/gimme
-cd gimme/
-make
-sudo make install
-```
-remove with:
-```console
-sudo make uninstall
-```
 
 # Inspired by
 gh -  https://github.com/cli/cli
