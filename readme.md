@@ -27,8 +27,8 @@ into `gm repo.wiki`
 at this moment running `gm` only prints what it will be used for to terminal output.
 
 # Functionality
-- work like a unix application: only print when when something important is happening
-- work with github-like REST apis
+- only print when when something important is happening
+- use github-like REST apis
 
 go to [wiki/options](options.md) for info
 
@@ -36,24 +36,16 @@ go to [wiki/options](options.md) for info
 - read to the user like their a child
 - constantly supply repeating output
 
-# Dependencies
 
 # Build Dependencies
-to build gimme:
 - make
 - gcc
 
-to generate docs from the wiki:
-- pandoc
-
-___docs are yet to be set up___
-
 # Inspired by
-gh -  https://github.com/cli/cli
-hub - https://github.com/github/hub
-gitlab - https://github.com/makkes/gitlab-cli
-
-plug.vim
+- gh       - <https://github.com/cli/cli>
+- hub      - <https://github.com/github/hub>
+- gitlab   - <https://github.com/makkes/gitlab-cli>
+- plug.vim - <https://github.com/junegunn/vim-plug>
 
 # License
 unlicense skrshe 2021. for more info see <https://unlicense.org>
