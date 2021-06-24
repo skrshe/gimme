@@ -1,7 +1,6 @@
-# Gimme (GIt MetagaME)
-gm - a git multitool for creating / doing things to and cloning
-repos with only `user/repo` or `repo` specified instead of
-`git clone method://domain/user/repo.git && cd repo`
+# Gimme (Git Metagame)
+gm - a git multitool for creating, configuring and cloning
+repos with only `user/repo` or `repo` needed.
 
 condensing
 ```console
@@ -21,7 +20,7 @@ $ git add remote git@domain:user/repo.wiki
 $ git push origin master
 $ cd ..
 ```
-into `gm repo.wiki`
+into `$ gm repo.wiki`
 
 # Disclaimer
 at this moment running `gm` only prints what it will be used for to terminal output.
@@ -42,9 +41,9 @@ go to [wiki/options](options.md) for info
 - gcc
 
 # Inspired by
-- gh       - <https://github.com/cli/cli>
-- hub      - <https://github.com/github/hub>
-- gitlab   - <https://github.com/makkes/gitlab-cli>
+- gh - <https://github.com/cli/cli>
+- hub - <https://github.com/github/hub>
+- gitlab - <https://github.com/makkes/gitlab-cli>
 - plug.vim - <https://github.com/junegunn/vim-plug>
 
 # License
