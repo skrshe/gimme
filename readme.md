@@ -22,6 +22,13 @@ $ cd ..
 ```
 into `$ gm repo.wiki`
 
+## Inspired by
+- gh - <https://github.com/cli/cli>
+- hub - <https://github.com/github/hub>
+- gitlab - <https://github.com/makkes/gitlab-cli>
+- plug.vim - <https://github.com/junegunn/vim-plug>
+
+
 # Disclaimer
 at this moment running `gm` only prints what it will be used for to terminal output.
 
@@ -39,12 +46,6 @@ go to [wiki/options](options.md) for info
 # Build Dependencies
 - make
 - gcc
-
-# Inspired by
-- gh - <https://github.com/cli/cli>
-- hub - <https://github.com/github/hub>
-- gitlab - <https://github.com/makkes/gitlab-cli>
-- plug.vim - <https://github.com/junegunn/vim-plug>
 
 # License
 unlicense skrshe 2021. for more info see <https://unlicense.org>
