@@ -1,17 +1,14 @@
 CC=gcc
 FLAGS=-Wall -Wextra -ggdb
 
-build/gm: build src/main.c
-	$(CC) src/main.c $(FLAGS) -o $@
+gm: main.c
+	$(CC) $? $(FLAGS) -o $@
 
-start:
-	mkdir -p build
-
-clean: build/*
+clean: gm*
 	rm -rf $?
 
-run: build/gm
-	$?
+run: gm
+	./$?
 
-use: build/gm
-	$? -h
+use: gm
+	./$? -h
