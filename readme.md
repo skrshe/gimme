@@ -2,25 +2,41 @@
 gm - a git multitool for creating, configuring and cloning
 repos with only `user/repo` or `repo` needed.
 
-condensing
+condensing:
+
 ```console
 $ mkdir name
 $ cd name
+$ cp /path/to/license License
+$ cp /path/to/readme README.md
 $ git init
-$ cp /random/dir/license License
-$ edit README.md
-$ git submodule add wiki
-$ git add -u
-$ git commit -m "template shit"
+$ git add *
+$ git commit -m "begin repo"
+$ cd ..
+$ mkdir name wiki
+$ cp /path/to/wiki/* .
+$ git init
+$ git add *
+$ git commit -m "begin wiki"
 ~ web shenanigans
+$ cd ../name
 $ git add remote git@domain:user/repo
 $ git push origin master
-$ cd wiki
+$ cd ../name.wiki
 $ git add remote git@domain:user/repo.wiki
-$ git push origin master
-$ cd ..
+$ git push --set-upstream origin master
+$ cd ../name
 ```
-into `$ gm repo.wiki`
+
+or
+
+```console
+$ git clone git@domain:user/repo.wiki
+$ git clone git@domain:user/repo
+$ cd repo
+```
+
+into `$ gm domain/repo.wiki`
 
 ## Inspired by
 - gh - <https://github.com/cli/cli>
