@@ -59,6 +59,13 @@ go to [wiki/options](options.md) for info
 - make
 - gcc
 
+# Build Guide 
+run in terminal:
+```console
+make
+./gm domain/repo
+```
+
 ## Inspired by
 - gh - <https://github.com/cli/cli>
 - hub - <https://github.com/github/hub>
