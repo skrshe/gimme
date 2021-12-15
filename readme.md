@@ -1,8 +1,10 @@
 # Gimme (Git Metagame)
 gm - a git multitool for creating, configuring and cloning
-repos with only `user/repo` or `repo` needed.
+repos, while providing simple access to complex tools
 
-aiming to condensing:
+with only `user/repo` or `repo` needed.
+
+aiming to condense:
 
 ```console
 $ mkdir name
@@ -40,13 +42,6 @@ into `$ gm domain/repo.wiki`
 
 while providing simple access to complex tools
 
-## Inspired by
-- gh - <https://github.com/cli/cli>
-- hub - <https://github.com/github/hub>
-- gitlab - <https://github.com/makkes/gitlab-cli>
-- plug.vim - <https://github.com/junegunn/vim-plug>
-
-
 # Disclaimer
 at this moment running `gm` only prints what it will be used for to terminal output.
 
@@ -56,14 +51,19 @@ at this moment running `gm` only prints what it will be used for to terminal out
 
 go to [wiki/options](options.md) for info
 
-# Non goals
+# Non-goals
 - read to the user like their a child
 - constantly supply repeating output
-
 
 # Build Dependencies
 - make
 - gcc
+
+## Inspired by
+- gh - <https://github.com/cli/cli>
+- hub - <https://github.com/github/hub>
+- gitlab - <https://github.com/makkes/gitlab-cli>
+- plug.vim - <https://github.com/junegunn/vim-plug>
 
 # License
 unlicense skrshe 2021. for more info see <https://unlicense.org>
