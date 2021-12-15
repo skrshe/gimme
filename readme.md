@@ -2,7 +2,7 @@
 gm - a git multitool for creating, configuring and cloning
 repos with only `user/repo` or `repo` needed.
 
-condensing:
+aiming to condensing:
 
 ```console
 $ mkdir name
@@ -37,6 +37,8 @@ $ cd repo
 ```
 
 into `$ gm domain/repo.wiki`
+
+while providing simple access to complex tools
 
 ## Inspired by
 - gh - <https://github.com/cli/cli>
